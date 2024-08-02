@@ -4,7 +4,7 @@ clc
 t_values = 1:1000000; % 时间t的取值
 refractionProbability = 0.8; % 折射概率
 bounds = [20, 20, 20]; % 立方体边界
-numRays = 8; % 光线数量
+numRays = 8; % 声线数量
 
 % 读取 TSPLIB 数据
 filename = 'att48.tsp';
@@ -59,11 +59,11 @@ function [bestPath, iterationDistances] = optimize(t_values, refractionProbabili
         bestPaths{i} = paths{i};
     end
 
-    % 初始化光线位置和方向
+    % 初始化声线位置和方向
     initial_positions = rand(numRays, 3) .* bounds; % 随机初始位置
     directions = rand(numRays, 3) * 2 - 1; % 随机方向向量
     directions = directions ./ vecnorm(directions, 2, 2); % 归一化方向向量
-    current_positions = initial_positions; % 当前光线的位置
+    current_positions = initial_positions; % 当前声线的位置
 
     % 记录每次迭代的当前路径总路程
     iterationDistances = zeros(length(t_values), numRays);
@@ -83,9 +83,9 @@ function [bestPath, iterationDistances] = optimize(t_values, refractionProbabili
                 paths{i} = bestPaths{i};
             end
         else
-            % 对于每条光线
+            % 对于每条光声线
             for ray = 1:numRays
-                % 计算当前光线的位置并映射到城市ID
+                % 计算当前声线的位置并映射到城市ID
                 current_positions(ray, :) = current_positions(ray, :) + directions(ray, :);
                 current_positions(ray, :) = mod(current_positions(ray, :), bounds); % 确保位置在边界内
 
