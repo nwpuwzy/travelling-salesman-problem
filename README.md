@@ -15,6 +15,12 @@ solution quality and convergence speed. The proposed method offers a promising a
 
 To test different data sets, just change the file name in line10: filename = 'att48.tsp';
 
-Main results
+Main results here
+![image](https://github.com/nwpuwzy/travelling-salesman-problem/blob/main/results/50-1.svg)
+![image](https://github.com/nwpuwzy/travelling-salesman-problem/blob/main/results/50-2.svg)
+![image](https://github.com/nwpuwzy/travelling-salesman-problem/blob/main/results/200-1.svg)
+![image](https://github.com/nwpuwzy/travelling-salesman-problem/blob/main/results/200-2.svg)
+![image](https://github.com/nwpuwzy/travelling-salesman-problem/blob/main/results/1000-1.svg)
+![image](https://github.com/nwpuwzy/travelling-salesman-problem/blob/main/results/1000-2.svg)
 
 
