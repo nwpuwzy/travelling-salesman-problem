@@ -1,4 +1,4 @@
-![50-1](https://github.com/user-attachments/assets/315bdea8-3790-4bf8-bc5b-184cddcba008)# travelling-salesman-problem
+# travelling-salesman-problem
 
 For more datasets, you can visit http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/
 
@@ -16,5 +16,5 @@ solution quality and convergence speed. The proposed method offers a promising a
 To test different data sets, just change the file name in line10: filename = 'att48.tsp';
 
 Main results
-![Uplo![Uploading 50-2.svg…]()ading 50-1.svg…]()
+
 
